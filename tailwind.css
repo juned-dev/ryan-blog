@@ -1,0 +1,41 @@
+/* Body font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    article .first-para:first-letter {
+        font-size: 3.5rem;
+        padding: 0 12px 0 0;
+        line-height: 0.85em;
+        float: left;
+    }
+}
+
+body{
+    @apply text-body m-0 font-body  text-xl
+}
+h1,h2,h3,h4,h5,h6{
+    @apply my-0
+}
+p{
+    @apply mt-0 leading-8
+}
+img{
+    @apply max-w-full
+}
+a{
+    @apply no-underline text-primary
+}
+ul{
+    @apply p-0 m-0 list-none
+}
+
+button{
+    @apply focus:outline-none
+}
+.author-by-line li a{
+    padding: 0 3px;
+}
